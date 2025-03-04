@@ -1,5 +1,4 @@
 import logo from './logonew.jpg'
-import hero_img from './hero_img.jpg'
 import cart_icon from './cart_icon.png'
 import bin_icon from './bin_icon.png'
 import dropdown_icon from './dropdown_icon.png'
@@ -11,11 +10,18 @@ import star_dull_icon from './star_dull_icon.png'
 import star_icon from './star_icon.png'
 import support_img from './support_img.png'
 import menu_icon from './menu_icon.png'
-import about_img from './about_img.png'
-import contact_img from './contact_img.png'
+import about_img from './about.jpeg'
+import contact_img from './contact.jpg'
 import razorpay_logo from './razorpay_logo.png'
-// import stripe_logo from './stripe_logo.png'
+import hero_img from './hero_img.jpg'
+import hero_img2 from './heroimg2.jpeg'
+import hero_img3 from './heroimg3.jpeg'
+import hero_img4 from './heroimg4.jpeg'
+import hero_img5 from './heroimg5.jpeg'
+import hero_img6 from './heroimg6.jpeg'
 import cross_icon from './cross_icon.png'
+import login_img from './login.jpeg'
+import shop_cart from './shopcart.jpg'
 
 export const assets = {
   logo,
@@ -34,6 +40,12 @@ export const assets = {
   about_img,
   contact_img,
   razorpay_logo,
-  //   stripe_logo,
   cross_icon,
+  hero_img2,
+  hero_img4,
+  hero_img3,
+  hero_img5,
+  hero_img6,
+  login_img,
+  shop_cart,
 }
