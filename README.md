@@ -12,23 +12,10 @@ Database: MongoDB
 
 Authentication: JSON Web Tokens (JWT)
 
-State Management: React Context API / Redux (if applicable)
+State Management: React Context API / Redux 
 
-Payment Gateway: (Mention if implemented, e.g., Stripe, Razorpay, PayPal)
+Payment Gateway: ( Razorpay)
 
-🌟 Features
-
-User authentication (Login/Register)
-
-Product listing and detailed product pages
-
-Shopping cart functionality
-
-Secure checkout process
-
-Order management for users and admin
-
-Responsive design for mobile and desktop
 
 Admin dashboard for managing products and orders
 <img width="1470" alt="Screenshot 2025-03-05 at 8 50 38 PM" src="https://github.com/user-attachments/assets/3ed05a4d-b478-482d-a68d-aad373bebe27" />
