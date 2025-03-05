@@ -10,7 +10,7 @@ const ProductSchema = new mongoose.Schema({
   image: { type: String, required: true },
 })
 
-//model create
+
 const ProductModel =
   mongoose.models.Product || mongoose.model('Product', ProductSchema)
 
