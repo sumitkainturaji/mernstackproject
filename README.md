@@ -1,3 +1,36 @@
+📌 Project Overview
+
+This is a fully functional eCommerce website built using the MERN (MongoDB, Express.js, React, Node.js) stack. The platform allows users to browse products, add them to a cart, and complete purchases. The website features a clean and modern UI designed with Tailwind CSS for a responsive and visually appealing experience.
+
+🔧 Technologies Used
+
+Frontend: React, Tailwind CSS
+
+Backend: Node.js, Express.js
+
+Database: MongoDB
+
+Authentication: JSON Web Tokens (JWT)
+
+State Management: React Context API / Redux (if applicable)
+
+Payment Gateway: (Mention if implemented, e.g., Stripe, Razorpay, PayPal)
+
+🌟 Features
+
+User authentication (Login/Register)
+
+Product listing and detailed product pages
+
+Shopping cart functionality
+
+Secure checkout process
+
+Order management for users and admin
+
+Responsive design for mobile and desktop
+
+Admin dashboard for managing products and orders
 <img width="1470" alt="Screenshot 2025-03-05 at 8 50 38 PM" src="https://github.com/user-attachments/assets/3ed05a4d-b478-482d-a68d-aad373bebe27" />
 <img width="1470" alt="Screenshot 2025-03-05 at 8 51 37 PM" src="https://github.com/user-attachments/assets/cd682c89-7889-4183-93c7-04ea40009000" />
 <img width="1470" alt="Screenshot 2025-03-05 at 8 55 26 PM" src="https://github.com/user-attachments/assets/f356984f-227d-4984-bf03-866ac89bb048" />
