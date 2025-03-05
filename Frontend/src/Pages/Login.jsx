@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import Cookies from 'js-cookie'
-import { assets } from '../assets/frontend_assets/assets' // Ensure correct image path
+import { assets } from '../assets/frontend_assets/assets' 
 
 const LoginPage = () => {
   const [currentState, setCurrentState] = useState('Login')
@@ -25,12 +25,12 @@ const LoginPage = () => {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  // Handle Input Change
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  // Submit Handler for Login & Signup
+
   const onSubmitHandler = async (event) => {
     event.preventDefault()
     try {
@@ -54,7 +54,7 @@ const LoginPage = () => {
     }
   }
 
-  // Forgot Password Handler
+
   const handleForgotPassword = async () => {
     if (!emailForReset) {
       setMessage('Please enter your email.')
@@ -73,7 +73,7 @@ const LoginPage = () => {
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-4 ">
-      {/* Image Section */}
+   
       <div className="w-full md:w-1/2 flex justify-center md:justify-end p-4">
         <img
           src={assets.login_img}
@@ -83,7 +83,7 @@ const LoginPage = () => {
         />
       </div>
 
-      {/* Login Form Container */}
+    
       <div className="flex flex-col items-center justify-center w-full md:w-1/2 max-w-sm md:max-w-md lg:max-w-lg bg-white shadow-lg rounded-lg p-6 md:h-[70vh] ">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-gray-800">
@@ -97,7 +97,7 @@ const LoginPage = () => {
         </div>
 
         {forgotPassword ? (
-          // Forgot Password Form
+         
           <div className="flex flex-col w-full gap-4 mt-6">
             <input
               type="email"
@@ -120,7 +120,7 @@ const LoginPage = () => {
             </p>
           </div>
         ) : (
-          // Login / Signup Form
+        
           <form
             onSubmit={onSubmitHandler}
             className="flex flex-col w-full gap-4 mt-6"
@@ -154,7 +154,7 @@ const LoginPage = () => {
               onChange={handleChange}
             />
 
-            {/* Forgot Password & Toggle Form */}
+          
             <div className="flex justify-between text-sm text-gray-600">
               <p
                 className="cursor-pointer hover:text-gray-800"
@@ -174,7 +174,7 @@ const LoginPage = () => {
               </p>
             </div>
 
-            {/* Submit Button */}
+           
             <button className="bg-gray-900 text-white font-medium px-4 py-2 mt-4 rounded-md hover:bg-gray-700 transition-all duration-300">
               {currentState === 'Login' ? 'Sign In' : 'Sign Up'}
             </button>
