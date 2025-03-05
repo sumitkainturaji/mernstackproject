@@ -35,9 +35,9 @@ const listProduct = async (req, res) => {
 
 const removeProduct = async (req, res) => {
   try {
-    console.log('Received request to delete:', req.body.id) // Debugging log
+    console.log('Received request to delete:', req.body.id) 
 
-    // Find the product
+   
     const food = await ProductModel.findById(req.body.id)
     if (!food) {
       return res
