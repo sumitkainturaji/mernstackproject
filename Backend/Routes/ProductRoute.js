@@ -14,12 +14,12 @@ const Storage = multer.diskStorage({
   },
 })
 
-// Middleware for file uploads
+
 const upload = multer({ storage: Storage })
 
 const foodRouter = express.Router()
 
-// Single endpoint for adding food items
+
 foodRouter.post('/add', upload.single('image'), addProduct)
 foodRouter.get('/list', listProduct)
 foodRouter.post('/remove', removeProduct)
