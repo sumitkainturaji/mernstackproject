@@ -11,7 +11,7 @@ const razorpayInstance = new Razorpay({
   key_secret: process.env.RAZORPAY_SECRET,
 })
 
-// ROUTE 1 : Create Order Api Using POST Method http://localhost:2000/api/payment/order
+
 router.post('/order', (req, res) => {
   const { amount } = req.body
 
@@ -36,29 +36,22 @@ router.post('/order', (req, res) => {
   }
 })
 
-// ROUTE 2 : Create Verify Api Using POST Method http://localhost:2000/api/payment/verify
+
 router.post('/verify', async (req, res) => {
   const { razorpay_order_id, razorpay_payment_id, razorpay_signature } =
     req.body
 
-  // console.log("req.body", req.body);
-
   try {
-    // Create Sign
     const sign = razorpay_order_id + '|' + razorpay_payment_id
-
-    // Create ExpectedSign
     const expectedSign = crypto
       .createHmac('sha256', process.env.RAZORPAY_SECRET)
       .update(sign.toString())
       .digest('hex')
 
-    // console.log(razorpay_signature === expectedSign);
-
-    // Create isAuthentic
+    
     const isAuthentic = expectedSign === razorpay_signature
 
-    // Condition
+
     if (isAuthentic) {
       const payment = new Payment({
         razorpay_order_id,
@@ -66,10 +59,8 @@ router.post('/verify', async (req, res) => {
         razorpay_signature,
       })
 
-      // Save Payment
       await payment.save()
 
-      // Send Message
       res.json({
         message: 'Payement Successfully',
       })
