@@ -8,7 +8,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
-  const url = 'https://mernstackproject-tr1z.onrender.com'
+  const url = 'https://mernstackproject-backend-ydgw.onrender.com'
   return (
     <div>
       <ToastContainer />
