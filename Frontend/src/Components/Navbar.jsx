@@ -40,9 +40,9 @@ const Navbar = () => {
           className="flex items-center"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          <img
+           <img
             src={assets.logo}
-            className="h-[70px] w-max min-w-[50px] rounded-full"
+            className="lg:h-[70px]  min-w-[30px] rounded-full md:h-[60px] h-40 w-30 "
             alt="Logo"
           />
         </Link>
